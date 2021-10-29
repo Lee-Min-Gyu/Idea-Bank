@@ -1,0 +1,38 @@
+##Simple Calculator
+*****Function Declaration******************
+
+def add(x,y):
+  return x+y
+def subtract(x,y):
+  return x-y
+def multiply(x,y):
+  return x*y
+def divide(x,y):
+  return x/y
+******************BODY**********************
+while True:
+  print("========================")
+  print("Select operation.")
+  print("0.Quit/1.Add/2.Subtract"/3.Multiply/4.Divide")
+#Take input from the user
+  choice = input("Enter choice(0/1/2/3/4):")
+  if choice == '0':
+    break
+  if(choice<'0')or(choice>'6'):
+    print("Invalid input")
+    continue
+  
+  num1 = float(input("첫번째 숫자를 입력하시오:"))
+  num2 = float(input("두번째 숫자를 입력하시오:"))
+  
+  if choice =='1':
+    print(num1,"+",num2,"=", add(num1, num2))
+    
+  elif choice =='2':
+    print(num1,"-",num2,"=",subtract(num1,num2))
+  
+  elif choice =='3':
+    print(num1,"*",num2,"=",multiply(num1,num2))
+   
+  else:
+    print(num1,"/",num2,"=",divide(num1,num2))
