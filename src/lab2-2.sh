@@ -1,9 +1,8 @@
-#include <stdio.h>
-int main (void)
-{
-	int arr[5] = {1,2,3,4,5}, *ptr=arr;
-	for (int i= 0; i<5; i++)
-		*ptr+=2, printf("%d\n", *ptr++);
-		
-	return0;
-}
+#!/bin/bash
+num1=$1
+str=$2
+num2=$3
+num3=`expr $num1 $str $num2`
+
+echo $num3
+exit 0
